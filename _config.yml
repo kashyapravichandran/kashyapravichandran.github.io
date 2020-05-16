@@ -40,15 +40,15 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: https://twitter.com/kashyap_ravi97/
   - title: facebook
-    url:
+    url: https://www.facebook.com/kachu97
   - title: instagram
-    url:
+    url: https://www.instagram.com/kashyap_ravichandran/
   - title: linkedin
-    url: 
+    url: https://www.linkedin.com/in/kashyap-r/
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/kashyapravichandran
 
 # Postal address (add as many lines as necessary)
 address:
