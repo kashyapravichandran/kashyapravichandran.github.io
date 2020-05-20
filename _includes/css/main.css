@@ -275,6 +275,24 @@ section.about_section {
     background: #fff;
 }
 
+.btn-outline1 {
+    margin-top: 15px;
+    border: solid 2px #{{ site.color.primary }};
+    font-size: 20px;
+    color: #{{ site.color.primary }};
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline1:hover,
+.btn-outline1:focus,
+.btn-outline1:active,
+.btn-outline1.active {
+    border: solid 2px #{{ site.color.secondary }};
+    color: #{{ site.color.secondary }};
+    background: #fff;
+}
+
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
