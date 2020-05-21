@@ -1,0 +1,16 @@
+---
+title: Skipper
+layout: default
+modal-id: 1
+img: cabin.png
+alt: image-alt
+project-date: March '20 - May '20
+category: Computer Architecture 
+description: In a modern superscalar processor control dependence seems to be the biggest bottleneck for any type of
+increase in IPC as it limits the number of useful instructions that are fetched and executed. This
+architecture tries to explore the domain of control independent region execution and hopes to reduce the
+number of useless instructions that are fetched by the processor. The skipper architecture skips over the
+control dependent region, saves its progress, and goes ahead to execute data-independent control
+independent instructions till the branch resolves, and once it is resolved the processor switches context to
+the skipped region to execute instructions from that skipped region.
+---
