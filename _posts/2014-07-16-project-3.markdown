@@ -1,5 +1,4 @@
 ---
-title: something
 layout: default
 modal-id: 3
 date: 2014-07-16
@@ -8,5 +7,5 @@ alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
-description: The working of a superscalar processor was simulated using two similar but different architecture. One, using a Reorder Buffer and another using a Physical Register file and an active list with a free list. The IPC of the simulation was studied when perfect cache and perfect branch prediction were turned off.  The github repositories for these projects are linked here: (https://github.com/kashyapravichandran/dynamic-instruction-scheduling), (https://github.com/kashyapravichandran/ECE721-sim).
+description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
 ---
