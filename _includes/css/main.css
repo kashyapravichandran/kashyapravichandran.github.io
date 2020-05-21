@@ -437,8 +437,8 @@ footer .footer-below {
     position: absolute;
     top: 25px;
     right: 25px;
-    width: 75px;
-    height: 75px;
+    width: 25px;
+    height: 25px;
     background-color: transparent;
     cursor: pointer;
 }
