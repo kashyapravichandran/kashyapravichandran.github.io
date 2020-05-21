@@ -3,6 +3,7 @@ title: Skipper
 layout: default
 modal-id: 1
 img: cabin.png
+date: 2014-07-18
 alt: image-alt
 project-date: March '20 - May '20
 category: Computer Architecture 
