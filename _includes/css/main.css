@@ -451,7 +451,7 @@ footer .footer-below {
     z-index: 1051;
     width: 1px;
     height: 25px;
-    margin-left: 35px;
+    margin-left: 70px;
     background-color: #{{ site.color.primary }};
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
