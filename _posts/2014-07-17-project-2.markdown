@@ -3,7 +3,7 @@ title: Out of Order Processor
 layout: default
 modal-id: 2
 date: 2014-07-17
-img: skipper.png
+img: cake.png
 alt: image-alt
 project-date: December 2019 - February 2020
 category: Computer Architecture - C++
