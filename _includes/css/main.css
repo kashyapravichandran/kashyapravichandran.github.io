@@ -437,8 +437,8 @@ footer .footer-below {
     position: absolute;
     top: 50px;
     right: 50px;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     cursor: pointer;
 }
@@ -450,7 +450,7 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
-    height: 25px;
+    height: 50px;
     margin-left: 35px;
     background-color: #{{ site.color.primary }};
     -webkit-transform: rotate(45deg);
@@ -461,7 +461,7 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
-    height: 25px;
+    height: 50px;
     background-color: #{{ site.color.primary }};
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
