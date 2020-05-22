@@ -3,9 +3,9 @@ title: Out of Order Processor
 layout: default
 modal-id: 2
 date: 2014-07-17
-img: skippper.png
+img: skipper.png
 alt: image-alt
 project-date: December 2019 - February 2020
 category: Computer Architecture (C++)
-description: he working of a superscalar processor was simulated using two similar but different architecture. <br> One, using a Reorder Buffer and another using a Physical Register file and an active list with a free list. The IPC of the simulation was studied when perfect cache and perfect branch prediction were turned off.
+description: The working of a superscalar processor was simulated using two similar but different architecture. One, using a Reorder Buffer and another using a Physical Register file and an active list with a free list. The IPC of the simulation was studied when perfect cache and perfect branch prediction were turned off. The github repositories for these projects are linked here: <a href="https://github.com/kashyapravichandran/dynamic-instruction-scheduling">OoO with Reorder Buffer</a>,<a href="https://github.com/kashyapravichandran/ECE721-sim"> OoO with active list and a physical register file </a>
 ---
