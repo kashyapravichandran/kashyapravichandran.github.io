@@ -7,5 +7,9 @@ img: skipper.png
 alt: image-alt
 project-date: November 2019 - February
 category: Computer Architecture (C++)
-description:  The working of a superscalar processor was simulated using two similar but different architecture. One, using a Reorder Buffer and another using a Physical Register file and an active list with a free list. The IPC of the simulation was studied when perfect cache and perfect branch prediction were turned off. The github repositories for these projects are linked here: [OoO with Reorder Buffer](https://github.com/kashyapravichandran/dynamic-instruction-scheduling), [OoO with active list and a physical register file](https://github.com/kashyapravichandran/ECE721-sim).
+repo1: OoO with a Reorder Buffer
+github:https://github.com/kashyapravichandran/dynamic-instruction-scheduling
+repo2: OoO with active list and a physical register file
+github2: https://github.com/kashyapravichandran/ECE721-sim
+description:  The working of a superscalar processor was simulated using two similar but different architecture. One, using a Reorder Buffer and another using a Physical Register file and an active list with a free list. The IPC of the simulation was studied when perfect cache and perfect branch prediction were turned off. [OoO with active list and a physical register file](https://github.com/kashyapravichandran/ECE721-sim).
 ---
