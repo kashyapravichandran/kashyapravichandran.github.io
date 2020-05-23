@@ -55,6 +55,11 @@
                                 <img src="img/github.png"  alt="{{ post.alt }}">
                             </a>
                             {% endif %}
+                            {% if post.website %}
+                            <a href="{{post.website}}">   
+                                <img src="img/website.png"  alt="{{ post.alt }}">
+                            </a>
+                            {% endif %}
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
