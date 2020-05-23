@@ -39,13 +39,14 @@
                                 {% endif %}
                             </ul>
                             <ul class="list-inline item-details">
-                                
+                                <div id="images">
                                 {% if post.github %}
+                                
                                 <a href="{{post.github}}">
                                     
                                         <img src="img/github.png"  alt="{{ post.alt }}">
                                         {% if post.repo1 %}
-                                        <figcaption> <strong style="color:#557580;"> {{post.repo1}}</strong> </figcaption>
+                                        <div class="caption"> {{post.repo1}} </div>
                                         {% endif %}
                                    
                                 </a>
@@ -56,7 +57,7 @@
                                   
                                         <img src="img/github.png"  alt="{{ post.alt }}">
                                         {% if post.repo2 %}
-                                        <figcaption> <strong style="color:#557580;"> {{post.repo2}}</strong> </figcaption>
+                                        <div class="caption"> {{post.repo2}} </div>
                                         {% endif %}
                                          
                                 </a>
@@ -67,7 +68,8 @@
                                     <img src="img/website.png"  alt="{{ post.alt }}">
                                 </a>
                                 {% endif %}
-                            
+                            </div>
+
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>

@@ -200,6 +200,17 @@ section.about_section {
     }
 }
 
+#images{
+    text-align:center;
+    margin:50px auto; 
+}
+#images a{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color: #{{ site.color.primary }};
+ }
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
