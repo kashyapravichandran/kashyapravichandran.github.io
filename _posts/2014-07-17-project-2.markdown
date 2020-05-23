@@ -8,7 +8,7 @@ alt: image-alt
 project-date: November 2019 - February
 category: Computer Architecture (C++)
 repo1: OoO with a Reorder Buffer
-github:https://github.com/kashyapravichandran/dynamic-instruction-scheduling
+github: https://github.com/kashyapravichandran/dynamic-instruction-scheduling
 repo2: OoO with active list and a physical register file
 github2: https://github.com/kashyapravichandran/ECE721-sim
 description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
