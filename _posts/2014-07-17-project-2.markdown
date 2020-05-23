@@ -11,5 +11,5 @@ repo1: ROB
 github: https://github.com/kashyapravichandran/dynamic-instruction-scheduling
 repo2: AL and PRF 
 github2: https://github.com/kashyapravichandran/ECE721-sim
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+description: The working of a superscalar processor was simulated using two similar but different architecture. One, using a Reorder Buffer and another using a Physical Register file and an active list with a free list. The IPC of the simulation was studied when perfect cache and perfect branch prediction were turned off.
 ---
