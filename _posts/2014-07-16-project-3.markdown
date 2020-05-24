@@ -1,11 +1,16 @@
 ---
+title: Cache Simulator
 layout: default
 modal-id: 3
 date: 2014-07-16
-img: circus.png
+img: cache.png
 alt: image-alt
-project-date: April 2014
+project-date: September 2019 and November 2019 
 client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+category: Computer Architecture and Parallel Architecture (C++)
+repo1: Memory Heirarchy 
+github: https://github.com/kashyapravichandran/Cache-Simulator
+repo2: Cache Coherence 
+github2: https://github.com/kashyapravichandran/Cache-Coherence-
+description: A memory heirarchy with L1 and L2 caches. The L1 cache can be a n-way set associative cache or a direct mapped decoupled sectored cache. L2 can be either be a direct mapped cache or a n-way set associative cache. The effect of cache size, block size and associativity on the miss rate and the average access time was studied. <br> The second simulation considers 'n' differnt processor cores each with their own private L1 cache and MSI, MESI and Dragon coherence protocols were applied to simulate the workings of a simultaneous multiprocessor system. The effect these protocols have on cache to cache transfers and miss rate were studied.  
 ---
