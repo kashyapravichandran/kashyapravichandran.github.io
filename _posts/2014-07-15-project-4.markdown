@@ -1,11 +1,14 @@
 ---
+title: Touch Screen LED Controller
 layout: default
 modal-id: 4
 date: 2014-07-15
-img: game.png
+img: led.png
 alt: image-alt
-project-date: April 2014
+project-date: November 2019 - December 2019
 client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+category: Embedded Systems (Embedded C)
+youtube: https://www.youtube.com/watch?v=NhM87d34uh4&feature=youtu.be
+github: https://github.com/kashyapravichandran/RTOS
+description: The number of hardware resources on an embedded board is limited. This projects looks at ways to share hardware resources among different threads running on a ARM Cortex M0+ processor using an Real Time Operating System (RTX 5) and inter-process communication protocols such that a hard time budget is met. 
 ---

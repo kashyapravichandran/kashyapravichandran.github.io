@@ -41,7 +41,7 @@
                             <ul class="list-inline item-details">
                                 <div id="images">
                                 {% if post.github %}
-                                
+
                                 <a href="{{post.github}}">
                                     
                                         <img src="img/github.png"  alt="{{ post.alt }}">
@@ -66,6 +66,12 @@
                                 {% if post.website %}
                                 <a href="{{post.website}}">   
                                     <img src="img/website.png"  alt="{{ post.alt }}">
+                                </a>
+                                {% endif %}
+
+                                {% if post.youtube %}
+                                <a href="{{post.youtube}}">   
+                                    <img src="img/youtube.png"  alt="{{ post.alt }}">
                                 </a>
                                 {% endif %}
                             </div>
