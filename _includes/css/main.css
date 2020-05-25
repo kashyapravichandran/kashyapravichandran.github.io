@@ -498,14 +498,11 @@ footer .footer-below {
 }
 
 /* Set a background color */
-body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
-}
+
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  position: relative;
+  position: absolute;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -523,7 +520,7 @@ body {
 }
 
 /* Container around content */
-.container {
+.container_timeline {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
@@ -531,7 +528,7 @@ body {
 }
 
 /* The circles on the timeline */
-.container::after {
+.container_timeline::after {
   content: '';
   position: absolute;
   width: 25px;
@@ -588,7 +585,7 @@ body {
 }
 
 /* The actual content */
-.content {
+.content_timeline {
   padding: 20px 30px;
   background-color: white;
   position: relative;
