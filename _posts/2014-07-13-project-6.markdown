@@ -1,11 +1,14 @@
 ---
+title: Take Note
 layout: default
 modal-id: 6
 date: 2014-07-15
-img: submarine.png
+img: takenote.png
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+category: Device and Software Developement (Embedded C, Python)
+website: http://enability.in/#/takeNote
+youtube: https://youtu.be/mDUywsiiFFI
+description: Take Note is a note taking device for the visually impaired. The device is powered by a NodeMCU ESP32 and has 9 mechnical switches as input. The input method is in braille so the device stores the input sequence is a special coded format called the hex code. An accessible software receives these code later, via bluetooth and decodes the coded values into one of the languages that is supported. 
 ---
