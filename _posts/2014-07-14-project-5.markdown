@@ -3,7 +3,7 @@ title: Task Scheduling
 layout: default
 modal-id: 5
 date: 2014-07-14
-img: safe.png
+img: task.png
 alt: image-alt
 project-date: September 2019 
 client: Start Bootstrap
