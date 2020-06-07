@@ -504,6 +504,7 @@ footer .footer-below {
 .timeline {
   position: absolute;
   max-width: 1200px;
+  color: #557580;
   margin: 0 auto;
 }
 
