@@ -493,139 +493,166 @@ footer .footer-below {
 
 /* things added for timeline stuff */
 
-@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800');
+$title-background: #3d9e67;
+$background-color: #faf8eb;
+$content-background-color: #67CC8E;
+$content-background-gradient: #56BC83;
+$time-color: #fff;
+$text-color: #fff;
+$content-width: 450px;
 
-/* Variables */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-@background: #557580;
-
-@color-primary: #CCB472;
-@color-light: white;
-@color-dim: #80724E;
-@spacing: 50px;
-@radius: 4px;
-
-@date: 120px;
-@dotborder: 4px;
-@dot: 11px;
-@line: 4px;
-
-@font-title: 'Saira', sans-serif;
-@font-text: 'Chivo', sans-serif;
-
-/* Base */
-
-body {
-  background: @background;
+body{
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
 
-p {
-  font-weight: 300;
-}
-
-a { 
-  color: @color-dim;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  letter-spacing: .3em;
-  font-size: .6em;
-  font-weight: 400;
-  background: #252727;
-  padding: .3rem 1rem;
-  margin: 1.9rem 0 0 0;
-  float: right;
-}
-
-a:hover { 
-  color: @color-light;
-  background: @color-primary;
-  border-bottom: .35em solid black;
-}
-
-strong {
-  font-weight: 600;
-}
-
-
-#timeline-content {
-  margin-top: @spacing;
-  text-align: center;  
-}
-
-/* Timeline */
-
-.timeline {
-  border-left: @line solid @color-primary;
-  border-bottom-right-radius: @radius;
-  border-top-right-radius: @radius;    
-  background: fade(@color-light, 3%);
-  color: fade(white, 80%);
-  font-family: @font-text;  
-  margin: @spacing auto;  
-  letter-spacing: 0.5px;   
-  position: relative;
-  line-height: 1.4em;
-  font-size: 1.03em;   
-  padding: @spacing;   
-  list-style: none;
-  text-align: left;  
-  font-weight: 100;  
-  max-width: 30%; 
+.timeline{
+  color: $text-color;
   
-  h1 {
-   font-family: @font-title;
-   letter-spacing: 1.5px;
-   font-weight: 100;
-   font-size: 1.4em;    
+  h1,
+  ul li .content h2{
+    text-shadow: 1px 1px 1px rgba(56, 56, 56, 0.5);
   }
   
-  h2, h3 {
-   font-family: @font-title;
-   letter-spacing: 1.5px;
-   font-weight: 400;
-   font-size: 1.4em;
+  h1{
+    background: $title-background;
+    padding: 70px 0;
+    font-size: 2.5em;
+    text-align: center;
   }
   
-  .event {
-    border-bottom: 1px dashed fade(@color-light, 10%);
-    padding-bottom: (@spacing * 0.5);
-    margin-bottom: @spacing;  
-    position: relative;
-
-    &:last-of-type { 
-      padding-bottom: 0;
-      margin-bottom: 0; 
-      border: none;      
+  ul{
+    background: $background-color;
+    padding: 50px 0;
+    
+    li{
+      background: $content-background-color;
+      position: relative;
+      margin: 0 auto;
+      width: 5px;
+      padding-bottom: 40px;
+      list-style-type: none;
+      
+      &:last-child{
+        padding-bottom: 7px;
+      }
+      
+      &:before{
+        content: '';
+        background: $background-color;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        border: 3px solid $content-background-color;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+      
+      .hidden {
+        opacity: 0;
+      }
+      
+      .content{
+        background: $content-background-color; 
+        position: relative;
+        top: 7px;
+        width: $content-width;
+        padding: 20px;
+        
+        h2{
+          color: $time-color;
+          padding-bottom: 10px;
+          text-align: center;
+        }
+        
+        p{
+          text-align: center;
+        }
+        
+        &:before{
+          content: '';
+          background: $content-background-color;
+          position: absolute;
+          top: 0px;
+          width: 38px;
+          height: 5px;
+        }
+      }
+      
+      &:nth-child(odd) .content {
+        left: 50px;
+        background: $content-background-color;
+        background: -webkit-linear-gradient(-45deg, $content-background-gradient , $content-background-color);
+        background: linear-gradient(-45deg,  $content-background-gradient , $content-background-color);
+      }
+      
+      &:nth-child(odd) .content:before {
+        left: -38px;
+      }
+      
+      &:nth-child(even) .content {
+        left: calc(-#{$content-width} - 45px);
+        background: $content-background-color;
+        background: -webkit-linear-gradient(45deg, $content-background-gradient , $content-background-color);
+        background: linear-gradient(45deg,  $content-background-gradient , $content-background-color);
+      }
+      
+      &:nth-child(even) .content:before {
+        right: -38px;
+      }
     }
+  }
+}
 
-    &:before, &:after {
-      position: absolute;
-      display: block;
-      top: 0;
+/* -------------------------
+   ----- Media Queries ----- 
+   ------------------------- */
+
+@media screen and (max-width: 1020px) {
+  .timeline ul li .content {
+    width: 41vw;
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: calc(-41vw - 45px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .timeline ul li {
+    margin-left: 20px;
+    
+    .content {
+      width: calc(100vw - 100px);
+    
+      h2{
+        text-align: initial;
+      }
     }
-
-    &:before {
-      left: (((@date * 0.6) + @spacing + @line + @dot + (@dotborder * 2)) * 1.5) * -1;    
-      color: fade(@color-light, 40%);    
-      content: attr(data-date);
-      text-align: right;
-      font-weight: 100;    
-      font-size: 0.9em;
-      min-width: @date;
-      font-family: @font-title;
+    
+    &:nth-child(even) .content {
+      left: 45px;
+      background: $content-background-color;
+      background: -webkit-linear-gradient(-45deg, $content-background-gradient , $content-background-color);
+      background: linear-gradient(-45deg,  $content-background-gradient , $content-background-color);
     }
-
-    &:after {
-      box-shadow: 0 0 0 @dotborder fade(@color-primary,100%);    
-      left: (@spacing + @line + (@dot * 0.35)) * -1;        
-      background: lighten(@background,5%);    
-      border-radius: 50%;  
-      height: @dot;
-      width: @dot;
-      content: "";
-      top: 5px;
+    
+    &:nth-child(even) .content:before {
+      left: -33px;
     }
   }
 }
