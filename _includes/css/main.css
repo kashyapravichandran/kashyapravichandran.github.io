@@ -504,7 +504,7 @@ body {
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  position: relative;
+  position: absolute;
   max-width: 1200px;
   margin: 0 auto;
   }
@@ -514,7 +514,7 @@ body {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: black;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -524,7 +524,7 @@ body {
 /* Container around content */
 .container {
   padding: 10px 40px;
-  position: relative;
+  position: absolute;
   background-color: inherit;
   width: 50%;
 }
@@ -590,7 +590,7 @@ body {
 .content {
   padding: 20px 30px;
   background-color: white;
-  position: relative;
+  position: absolute;
   border-radius: 6px;
 }
 
