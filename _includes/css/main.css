@@ -499,7 +499,7 @@ $gutter: 30px;
 $border-width: 4px;
 $dot-diameter: 8px;
 
-body {
+timeline_body {
   background: linear-gradient(55deg,#4E75B9 30%,#5CBF98 90%);
   display: flex;
   align-items: center;
@@ -572,7 +572,7 @@ body {
       font-size: 100%;
     }
   }
-  .body {
+  .timeline_body {
     margin: 0 0 3em;
     float: right;
     width: 66%;
