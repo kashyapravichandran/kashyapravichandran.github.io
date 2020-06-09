@@ -512,7 +512,7 @@ footer .footer-below {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: black;
+  background-color: #557580;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -526,6 +526,7 @@ footer .footer-below {
   background-color: inherit;
   width: 50%;
 }
+
 /* The circles on the timeline */
 .container_timeline::after {
   content: '';
