@@ -519,7 +519,7 @@ footer .footer-below {
 /* Container around content */
 .timeline_container {
   padding: 10px 40px;
-  position: relative;
+  position: absolute;
   background-color: white;
   width: 50%;
 }
