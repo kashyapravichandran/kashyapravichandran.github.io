@@ -527,7 +527,6 @@ footer .footer-below {
 /* The circles on the timeline */
 .timeline_container::after {
   content: '';
-  position: absolute;
   width: 25px;
   height: 25px;
   right: -17px;
