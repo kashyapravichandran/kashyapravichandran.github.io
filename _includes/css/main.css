@@ -517,7 +517,7 @@ footer .footer-below {
 }
 
 /* Container around content */
-.container {
+.timeline_container {
   padding: 10px 40px;
   position: relative;
   background-color: white;
@@ -525,7 +525,7 @@ footer .footer-below {
 }
 
 /* The circles on the timeline */
-.container::after {
+.timeline_container::after {
   content: '';
   position: absolute;
   width: 25px;
