@@ -505,12 +505,12 @@ footer .footer-below {
    width: 80%;
    padding: 50px 0;
    margin: 50px auto;
-   position: absolute;
+   position: relative;
 }
 
 .timeline_container:before {
    content: '';
-   position: absolute;
+   position: relative;
    top: 0;
    left: 50%;
    margin-left: -1px;
