@@ -493,105 +493,108 @@ footer .footer-below {
 
 /* things added for timeline stuff */
 
-$container-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
-
-$gutter: 30px;
-$border-width: 4px;
-$dot-diameter: 8px;
-
-timeline_body {
-  background: linear-gradient(55deg,#4E75B9 30%,#5CBF98 90%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 12vh 100px;
-  font-family: 'Source Sans Pro', arial, sans-serif;
-  font-weight: 300;
-  color: #333;
-  box-sizing: border-box;
-  * {
-    box-sizing: border-box;
-  }
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   outline: none;
 }
 
-.timeline {
-  width:100%;
-  max-width:800px;
-  background:#fff;
-  padding: 100px 50px;
-  position: relative;
-  box-shadow: $container-shadow;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left:calc(33% + 15px); //$gutter/2
-    bottom: 0px;
-    width: $border-width;
-    background: #ddd;
-  }
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  } 
+
+.timeline_container {
+   width: 80%;
+   padding: 50px 0;
+   margin: 50px auto;
+   position: absolute;
 }
 
-.entry {
-  clear: both;
-  text-align: left;
-  position: relative;
-  .title {
-    margin-bottom: .5em;
-    float: left;
-    width: 33%;
-    padding-right: $gutter;
-    text-align: right;
-    position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      width: $dot-diameter;
-      height: $dot-diameter;
-      border: $border-width solid salmon;
-      background-color:#fff;
-      border-radius:100%;
-      top: 15%;
-      right: -$dot-diameter;
-      z-index: 99;
-    }
-    h3 {
-      margin: 0;
-      font-size: 120%;
-    }
-    p {
-      margin: 0;
-      font-size: 100%;
-    }
-  }
-  .timeline_body {
-    margin: 0 0 3em;
-    float: right;
-    width: 66%;
-    padding-left: $gutter;
-    p {
-      line-height: 1.4em;
-      &:first-child {
-        margin-top: 0;
-        font-weight: 400;
-      }
-    }
-    ul {
-      color:#aaa;
-      padding-left: 0;
-      list-style-type: none;
-      li:before {
-        content: "–";
-        margin-right: .5em;
-      }
-    }
-  }
+.timeline_container:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+   z-index: 1
+}
+
+.timeline-block {
+   width: -webkit-calc(50% + 8px);
+   width: -moz-calc(50% + 8px);
+   width: calc(50% + 8px);
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+}
+
+.timeline-block-right {
+   float: right;
+}
+
+.timeline-block-left {
+   float: left;
+   direction: rtl
+}
+
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: #4FC1E9;
+   margin-top: 10px;
+   z-index: 9999
+}
+
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   color: #666
+}
+
+.timeline-content h3 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   font-weight: 500
+}
+
+.timeline-content span {
+   font-size: 15px;
+   color: #a4a4a4;
+}
+
+.timeline-content p {
+   font-size: 14px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: #888;
+}
+
+
+@media screen and (max-width: 768px) {
+   .container:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
 }
