@@ -527,10 +527,10 @@ footer .footer-below {
 /* The circles on the timeline */
 .timeline_container::after {
   content: '';
-  position: relative;
+  position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -15px;
   background-color: white;
   border:2px solid white;
   top: 15px;
