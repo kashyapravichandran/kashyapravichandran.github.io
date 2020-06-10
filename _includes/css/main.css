@@ -510,7 +510,7 @@ footer .footer-below {
 
 .timeline_container:before {
    content: '';
-   position: relative;
+   position: absolute;
    top: 0;
    left: 50%;
    margin-left: -1px;
