@@ -493,98 +493,98 @@ footer .footer-below {
 
 /* things added for timeline stuff */
 
-* {
-  box-sizing: border-box;
+@background: #252827;
+
+@color-primary: #004ffc;
+@color-light: white;
+@color-dim: #6c6d6d;
+@spacing: 50px;
+@radius: 4px;
+
+@date: 120px;
+@dotborder: 4px;
+@dot: 11px;
+@line: 4px;
+
+/* Base */
+
+#timeline-content {
+  margin-top: @spacing;
+  text-align: center;  
 }
 
-/* The actual timeline (the vertical ruler) */
+/* Timeline */
+
 .timeline {
+  border-left: @line solid @color-primary;
+  border-bottom-right-radius: @radius;
+  border-top-right-radius: @radius;    
+  background: fade(@color-light, 3%);
+  color: fade(white, 80%);
+  font-family: @font-text;  
+  margin: @spacing auto;  
+  letter-spacing: 0.5px;   
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  line-height: 1.4em;
+  font-size: 1.03em;   
+  padding: @spacing;   
+  list-style: none;
+  text-align: left;  
+  font-weight: 100;  
+  max-width: 30%; 
+  
+  h1 {
+   font-family: @font-title;
+   letter-spacing: 1.5px;
+   font-weight: 100;
+   font-size: 1.4em;    
+  }
+  
+  h2, h3 {
+   font-family: @font-title;
+   letter-spacing: 1.5px;
+   font-weight: 400;
+   font-size: 1.4em;
+  }
+  
+  .event {
+    border-bottom: 1px dashed fade(@color-light, 10%);
+    padding-bottom: (@spacing * 0.5);
+    margin-bottom: @spacing;  
+    position: relative;
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 3px;
-  background-color: #CCB472;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
+    &:last-of-type { 
+      padding-bottom: 0;
+      margin-bottom: 0; 
+      border: none;      
+    }
 
-/* Container around content */
-.timeline_container {
-  padding: 10px 40px;
-  position: absolute;
-  background-color: white;
-  width: 50%;
-}
+    &:before, &:after {
+      position: absolute;
+      display: block;
+      top: 0;
+    }
 
-/* The circles on the timeline */
-.timeline_container::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  right: -10px;
-  background-color: #557580;
-  border: 1px solid white;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
+    &:before {
+      left: (((@date * 0.6) + @spacing + @line + @dot + (@dotborder * 2)) * 1.5) * -1;    
+      color: fade(@color-light, 40%);    
+      content: attr(data-date);
+      text-align: right;
+      font-weight: 100;    
+      font-size: 0.9em;
+      min-width: @date;
+      font-family: @font-title;
+    }
 
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent yellow;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid yellow;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent yellow transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: yellow;
-  position: relative;
-  border-radius: 6px;
+    &:after {
+      box-shadow: 0 0 0 @dotborder fade(@color-primary,100%);    
+      left: (@spacing + @line + (@dot * 0.35)) * -1;        
+      background: lighten(@background,5%);    
+      border-radius: 50%;  
+      height: @dot;
+      width: @dot;
+      content: "";
+      top: 5px;
+    }
+  }
 }
