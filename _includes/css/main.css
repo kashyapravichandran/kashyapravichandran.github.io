@@ -526,8 +526,8 @@ footer .footer-below {
 .timeline_container::after {
   content: '';
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   right: -5px;
   background-color: #557580;
   border: 2px solid #FFFFFF;
