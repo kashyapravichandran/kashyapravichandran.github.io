@@ -500,7 +500,7 @@ footer .footer-below {
 .timeline {
   position: relative;
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 90%;
 }
 
 /* The actual timeline (the vertical ruler) */
