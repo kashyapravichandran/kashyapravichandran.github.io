@@ -492,7 +492,6 @@ footer .footer-below {
 
 
 /* things added for timeline stuff */
-
 * {
   box-sizing: border-box;
 }
@@ -509,10 +508,10 @@ footer .footer-below {
   content: '';
   position: absolute;
   width: 3px;
-  background-color: #CCB472;
+  background-color: black;
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: 10%;
   margin-left: -3px;
 }
 
@@ -520,7 +519,7 @@ footer .footer-below {
 .timeline_container {
   padding: 10px 40px;
   position: relative;
-  background-color: white;
+  background-color: inherit;
   width: 50%;
 }
 
@@ -528,11 +527,11 @@ footer .footer-below {
 .timeline_container::after {
   content: '';
   position: absolute;
-  width: 10px;
-  height: 10px;
-  right: -6px;
-  background-color: #557580;
-  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  right: -5px;
+  background-color: blue;
+  border: 2px solid #FFFFFF;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -545,7 +544,7 @@ footer .footer-below {
 
 /* Place the container to the right */
 .right {
-  left: 50%;
+  left: 10.4%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -557,9 +556,9 @@ footer .footer-below {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid red;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent yellow;
+  border-color: transparent transparent transparent red;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -571,9 +570,9 @@ footer .footer-below {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid yellow;
+  border: medium solid red;
   border-width: 10px 10px 10px 0;
-  border-color: transparent yellow transparent transparent;
+  border-color: transparent red transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -584,7 +583,7 @@ footer .footer-below {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: yellow;
+  background-color: red;
   position: relative;
   border-radius: 6px;
 }
