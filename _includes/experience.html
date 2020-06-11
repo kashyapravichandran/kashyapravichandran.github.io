@@ -8,30 +8,105 @@
     </div>
     <div class ="row"> 
     <div class ="col-lg-4 col-lg-offset-2">
-     <div id="timeline-content">
-      <ul class="timeline">
-        <li class="event" data-date="65Million B.C.">
-          <h3>Dinosaurs Roamed the Earth</h3>
-          <p>RAWWWWWWRRR</p>
-        </li>
-        <li class="event" data-date="2005">
-          <h3>Creative Component Launched</h3>
-          <p>"We can be all things to all people!" 📣</p>    
-        </li>
-        <li class="event" id="date" data-date="2009">
-          <h3>Squareflair was Born</h3>
-            <p></p> <p>"We can be all things to Squarespace users!" 📣</p>    
-        </li>
-    
-        <li class="event" data-date="November 15, 2018">
-          <h3>Squareflair Today</h3>
-          <p>"We design and build from scratch!" 📣<p/> <p>When we say <em><strong>100% custom</strong></em> we mean it— and we build all sites on the Squarespace Developer platform.<p/>
-          <p>Did you know that all of our pixels are hand-forged from the rarest of subpixels grown and harvested in the <em>Nerd Forest</em>? <br></p>
-          <p><strong>Our success can be measured by lives and brands enhanced by 9+ years of 100% Squarespace-focused service!</strong></p>
-        </li>
-      </ul>
-    </div>
+     <style>
+       
+        body {
+          font-size: 14px;
+          line-height: 1.5;
+        }
 
+        h1 {
+          font-size: 2rem;
+          margin-bottom: .5em;
+        }
+
+        p {
+          font-family: 'Roboto', sans-serif;
+          font-size: .8rem;
+        }
+
+        // ----------------  LAYOUT
+
+        .container {
+          max-width: 1024px;
+          width: 90%;
+          margin: 0 auto;
+        }
+
+        // ----------------  THE FONTS
+
+        $border-color: rgba(black, .3);
+
+        .timeline-item {
+          padding: 3em 2em 2em;
+          position: relative;
+          color: rgba(black, .7);
+          border-left: 2px solid $border-color;
+          
+          p {
+            font-size: 1rem;
+          }
+          
+          &::before {
+            content: attr(date-is);
+            position: absolute;
+            left: 2em;
+            font-weight: bold;
+            top: 1em;
+            display: block;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: .785rem;
+          }
+
+          &::after {
+            width: 10px;
+            height: 10px;
+            display: block;
+            top: 1em;
+            position: absolute;
+            left: -7px;
+            border-radius: 10px;
+            content: '';
+            border: 2px solid $border-color;
+            background: white;
+          }
+
+          &:last-child {
+            border-image: linear-gradient(
+              to bottom,
+              $border-color 60%,
+              rgba($border-color, 0)) 1 100%
+            ;
+          }
+}
+
+     </style>
+     <body>
+     <div class="container">
+     <div class="timeline-item" date-is='20-07-1990'>
+    <h1>Hello, 'Im a single div responsive timeline without mediaQueries!</h1>
+    <p>
+      I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
+    </p>
+  </div>
+  
+  <div class="timeline-item" date-is='20-07-1990'>
+    <h1>Oeehhh, that's awesome.. Me too!</h1>
+    <p>
+      I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
+    </p>
+  </div>
+  
+  <div class="timeline-item" date-is='20-07-1990'>
+    <h1>I'm ::last-child so my border fades ^__^</h1>
+    <p>
+      I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.
+    </p>
+  </div>
+  
+</div>
+</body>
   </div>
   </div>    
 </section>
