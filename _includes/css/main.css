@@ -500,7 +500,7 @@ footer .footer-below {
 .timeline {
   position: relative;
   margin: 0 auto;
-  max-width: 95%;
+  max-width:95%;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -520,7 +520,7 @@ footer .footer-below {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 50%;
+  width: 100%;
 }
 
 /* The circles on the timeline */
