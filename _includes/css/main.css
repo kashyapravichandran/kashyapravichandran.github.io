@@ -572,3 +572,49 @@ footer .footer-below {
   position: relative;
   border-radius: 6px;
 }
+
+
+.achievements_bottom{
+  padding: 20px 30px;
+  background-color: #557580;
+  position: relative;
+  border-radius: 6px;
+
+}
+.achievements_top{
+  padding: 20px 30px;
+  background-color: #E6E6E6;
+  position: relative;
+  border-radius: 6px;
+
+}
+
+h2.achievements_top{
+    font-size:100%;
+        color:#000000;
+}
+
+h3.achievements_top{
+    font-size:65%;
+        color:#A8A8A8;
+}
+
+p.achievements_top{
+    font-size:75%;
+    color:#000000;
+}
+
+h2.achievements_bottom{
+    font-size:100%;
+        color:#ffffff;
+}
+
+h3.achievements_bottom{
+    font-size:65%;
+        color:#ffffff;
+}
+
+p.achievements_bottom{
+    font-size:75%;
+    color:#ffffff;
+}
