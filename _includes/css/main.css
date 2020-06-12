@@ -580,22 +580,6 @@ footer .footer-below {
   position: relative;
   border-radius: 6px;
 
-  h2{
-    font-size:100%;
-    color:#ffffff;
-    }
-
-  h3{
-    font-size:65%;
-    color:#A8A8A8;
-    }
-
-   p{
-    font-size:75%;
-    color:#ffffff;
-    } 
-
-
 }
 
 .achievements_top{
@@ -603,21 +587,6 @@ footer .footer-below {
   background-color: #E6E6E6;
   position: relative;
   border-radius: 6px;
-
-  h2{
-    font-size:100%;
-    color:#000000;
-    }
-
-  h3{
-    font-size:65%;
-    color:#A8A8A8;
-    }
-
-  p{
-    font-size:75%;
-    color:#000000;
-    }
 
 }
 
